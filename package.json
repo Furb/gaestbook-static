@@ -28,7 +28,8 @@
         "onchange": "^7.1.0",
         "postcss-cli": "^9.1.0",
         "sass": "^1.49.9"
-    },  
+    }, 
+    
 
     "browserslist": [
         "> 0.5%",
