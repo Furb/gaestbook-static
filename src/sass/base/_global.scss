@@ -1,0 +1,176 @@
+@use "../helpers" as *;
+
+
+
+/*=============================================
+=            Custom properties            =
+=============================================*/
+
+:root {
+  
+  @each $color-name, $color-value in $site-colors {
+    --#{$color-name}: #{$color-value}; 
+  }
+
+  --radius: 0.5rem;
+}
+
+
+/*=====  End of Custom properties  ======*/
+
+
+
+body {
+  background: gb(light);
+  font-size: 16px;
+}
+
+/*=============================================
+=            Typography            =
+=============================================*/
+
+h1,
+.h1,
+h2,
+.h2 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  
+}
+
+h3,
+.h3,
+h4,
+.h4,
+p,
+input,
+label,
+.label,
+button,
+.btn, a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+.h1 {
+  font-size: clamp(2.5rem, 10vw, 7rem);
+}
+
+h2,
+.h2 {
+  font-size: clamp(2rem, 10vw, 4rem);
+  margin-bottom: 1.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: clamp(1.2rem, 50rem, 1.5rem);
+  font-weight: 400;
+  max-width: 60rem;
+}
+
+a {
+  transition: all 0.4s ease 0s;
+  text-decoration: none;
+  color: var(--dark);;
+}
+
+.label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+}
+
+button,
+.btn {
+  font-size: 0.875rem;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  line-height: 1.2;
+  border: 1px solid;
+  background: var(--white);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+/*=====  End of Typography  ======*/
+
+
+/*=============================================
+=            Logo            =
+=============================================*/
+
+.logo {
+  color: var(--white);
+}
+
+
+/*=====  End of Logo  ======*/
+
+
+
+/*=============================================
+=            container            =
+=============================================*/
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/*=====  End of container  ======*/
+
+
+
+/*=============================================
+=            Spacing            =
+=============================================*/
+
+.space {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.space-bottom {
+  padding-bottom: 3rem;
+}
+
+
+/*=====  End of Spacing  ======*/
+
+
+
+/*=============================================
+=            flex            =
+=============================================*/
+
+.flex {
+  display: flex;
+}
+
+/*=====  End of flex  ======*/

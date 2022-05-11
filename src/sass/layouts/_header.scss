@@ -1,0 +1,40 @@
+@use "../helpers" as *;
+
+
+
+header {
+    background: var(--dark);
+    height: 5vh;
+    min-height: 7rem;
+    padding: 3rem 0;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+  }
+  
+
+#headerMenu> span {
+    display: block;
+    width: 2rem;
+    height: 0.125rem;
+    border-radius: 9999px;
+    background-color: var(--white);
+}
+
+#headerMenu > span:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+#headerMenu, #headerMenu > span {
+    transition: all .4s ease-in-out;
+}
+

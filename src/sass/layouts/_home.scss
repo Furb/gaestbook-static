@@ -1,1 +1,43 @@
 @use "../helpers" as *;
+
+
+#heroHome {
+    background-image: url('/assets/images/summer-vacation-2457888.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    color: var(--light);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#activity .activity-boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+#activity figure {
+    height: 300px;
+    position: relative;
+   
+}
+
+#activity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+
+}
+
+#activity figcaption {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}

@@ -1,0 +1,50 @@
+@use "../helpers" as *;
+
+
+
+/*=============================================
+=            Booking form            =
+=============================================*/
+
+.booking-search {
+    background: var(--white);
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: var(--radius);
+}
+
+.booking-search form {
+    display: block;
+}
+
+form .box {
+    padding: 0.5rem 0;
+}
+form label {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+form button {
+    background: var(--red);
+    border: none;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.booking-search form input {
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    background: transparent;
+    padding-bottom: 0.5rem;
+}
+
+/*=====  End of Booking form  ======*/
+
+
+
+
