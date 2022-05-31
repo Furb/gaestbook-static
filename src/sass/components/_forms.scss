@@ -6,11 +6,77 @@
 =            Booking form            =
 =============================================*/
 
-.booking-search {
+.res-booking-search {
     background: var(--white);
-    margin: 2rem auto;
+    margin: 0.5rem auto 2rem;
     padding: 2rem;
     border-radius: var(--radius);
+    @include box-shadow;
+
+    @include breakpoint(lg) {
+        padding:1rem 2rem;
+    }
+    
+}
+
+.res-booking-search form {
+    display: block;
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.res-booking-search form .box {
+    padding: 0.5rem 0;
+}
+
+.res-booking-search form label {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.res-booking-search form button {
+    background: var(--red);
+    border: none;
+    color: var(--yellow);
+    cursor: pointer;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+}
+
+.res-booking-search form input {
+    width: 100%;
+    border-bottom: 1px solid var(--gray);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    background: transparent;
+    padding-bottom: 0.5rem;
+
+    @include breakpoint(lg) {
+        border-bottom: none;
+    }
+}
+
+/*=====  End of Booking form  ======*/
+
+
+
+/* non responsive form */
+
+
+
+.booking-search {
+    background: var(--white);
+    margin: 0.5rem auto 2rem;
+    padding: 2rem;
+    border-radius: var(--radius);
+    @include box-shadow;
+    
 }
 
 .booking-search form {
@@ -42,8 +108,6 @@ form button {
     background: transparent;
     padding-bottom: 0.5rem;
 }
-
-/*=====  End of Booking form  ======*/
 
 
 

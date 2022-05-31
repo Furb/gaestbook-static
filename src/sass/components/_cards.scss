@@ -1,0 +1,151 @@
+@use "../helpers" as *;
+
+
+
+
+/*=============================================
+=            Stories/News/blog            =
+=============================================*/
+
+
+
+.story-cards {
+    display: block;
+
+
+/* Block component */
+.card {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+/* Elements that are dependent the parent block */ 
+
+.card__label {
+    display: none;
+
+    @include breakpoint(md) {
+        display: inline-block;
+        margin-right: 10vw;
+    }
+}
+
+.card__figure {
+   display: flex;
+   justify-content: space-between;
+}
+
+.card__img--link {
+    margin-right: 1rem;
+    @include breakpoint(md) {
+     
+        margin-right: 2.5rem;
+    }
+}
+
+}
+
+.card__img {
+    @include card-img;
+    margin-bottom: 1rem;
+    max-width: 18.75rem;
+    max-height: 18.75rem;
+  
+   
+
+.card__title {
+    margin-top: 0.5rem;
+}
+
+
+}
+
+
+/*=====  End of Stories/News/blog  ======*/
+
+
+
+
+
+/*=============================================
+=            Listing cards            =
+=============================================*/
+
+
+.listingCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     grid-row-gap: 6rem;
+     grid-column-gap: 2rem;
+     margin-top: 0.5rem;
+     margin-bottom: 3rem;
+ }
+ 
+  .listingCards figure {
+     height: 300px;
+     position: relative;
+    
+ }
+ 
+ .listingCards img {
+     @include card-img;
+ 
+ }
+
+ .listingCards figcaption {
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem;
+ }
+ 
+
+
+
+/*=====  End of Listing cards  ======*/
+
+
+
+
+
+/*=============================================
+=            grid Gallery w. button            =
+=============================================*/
+
+
+.grid-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     gap: 2rem;
+     margin-top: 0.5rem;
+     margin-bottom: 3rem;
+ }
+ 
+  .grid-boxes-2 {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+ 
+  }
+ 
+  .grid-boxes figure {
+     height: 300px;
+     position: relative;
+    
+ }
+ 
+ .grid-boxes img {
+     @include card-img;
+ 
+ }
+ 
+ .grid-boxes figcaption {
+     position: absolute;
+     left: 2rem;
+     bottom: 2rem;
+ }
+
+/*=====  End of grid Gallery  ======*/
+

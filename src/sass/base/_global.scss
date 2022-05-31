@@ -3,7 +3,7 @@
 
 
 /*=============================================
-=    SCSS variables to CSS properties        =
+=    Custom properties: SCSS variables to CSS properties   =
 =============================================*/
 
 :root {
@@ -56,12 +56,12 @@ button,
 
 h1,
 .h1 {
-  font-size: clamp(2.5rem, 10vw, 7rem);
+  font-size: clamp(2.5rem, 0.4rem + 8vw, 7rem);
 }
 
 h2,
 .h2 {
-  font-size: clamp(2rem, 10vw, 4rem);
+  font-size: clamp(2rem, 0.4rem + 5vw, 4rem);
   margin-bottom: 1.5rem;
 }
 
@@ -83,6 +83,8 @@ p {
   max-width: 60rem;
 }
 
+
+
 a, a:visited, a:active {
   text-decoration: none;
 }
@@ -91,6 +93,14 @@ a
  {
   transition: all 0.4s ease 0s;
   color: var(--dark);;
+}
+
+.heading {
+  max-width: 52rem;
+}
+
+.heading-smaller {
+  max-width: 32rem;
 }
 
 .thin {
@@ -137,7 +147,8 @@ ul li {
 .container {
   max-width: 90rem;
   margin: 0 auto;
-  padding: 0 1.6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 /*=====  End of container  ======*/
@@ -153,6 +164,19 @@ ul li {
   padding-bottom: 3rem;
 }
 
+.space-small {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.space-top {
+  padding-top: 3rem;
+}
+
+.space-top-6 {
+  padding-top: 6rem;
+}
+
 .space-bottom {
   padding-bottom: 3rem;
 }
@@ -161,6 +185,17 @@ ul li {
   padding-bottom: 6rem;
 }
 
+
+.mr {
+  margin-right: 2rem;
+}
+
+
+.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*=====  End of Spacing  ======*/
 
@@ -175,3 +210,14 @@ ul li {
 }
 
 /*=====  End of flex  ======*/
+
+
+
+/*=============================================
+=            background image            =
+=============================================*/
+
+
+
+/*=====  End of background image  ======*/
+

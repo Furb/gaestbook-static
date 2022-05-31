@@ -1,0 +1,70 @@
+
+@use "../helpers" as *;
+
+
+/*=============================================
+=            main listing            =
+=============================================*/
+
+
+.mainListing {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(lg) {
+        flex-direction: row-reverse;
+       
+    }
+
+}
+
+
+
+.listings {
+    flex-grow: 1;
+
+    @include breakpoint(lg) {
+        margin-right: 2rem;
+    }
+
+}
+
+
+
+.listingPage__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    a {
+        border-bottom: 2px dotted;
+    }
+}
+
+.listingComponent {
+    display: none;
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.listingComponent__toggle {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+   
+    
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.listingComponent__features-option input {
+    width: auto !important;
+}
+
+
+/*=====  End of main listing  ======*/
+

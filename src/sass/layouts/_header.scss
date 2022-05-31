@@ -4,15 +4,15 @@
 
 header {
     background: var(--dark);
-    height: 5vh;
-    min-height: 7rem;
-    padding: 3rem 0;
-  }
+    
   
-  header .container {
+  }
+
+  .header__nav {   
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 5vh;
+    min-height: 6rem;
   }
   
   .logo {
@@ -23,10 +23,16 @@ header {
     a {
       color: var(--white);
     }
+
+    img {
+      height: 1.875rem;
+    }
   }
   
 
-#headerMenu> span {
+
+
+.headerMenu__button> span {
     display: block;
     width: 2rem;
     height: 0.125rem;
@@ -34,11 +40,42 @@ header {
     background-color: var(--white);
 }
 
-#headerMenu > span:not(:last-child) {
+.headerMenu__button > span:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
-#headerMenu, #headerMenu > span {
+.headerMenu__button, .headerMenu__button > span {
     transition: all .4s ease-in-out;
 }
 
+.headerMenu__button.active {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+.headerMenu__button.active > span:nth-child(2) {
+  width: 0;
+}
+
+.headerMenu__button.active > span:nth-child(1), 
+.headerMenu__button.active > span:nth-child(3) {
+  transition-delay: .4s;
+}
+
+.headerMenu__button.active > span:nth-child(1){
+  transform: translateY(9px);
+}
+
+.headerMenu__button.active > span:nth-child(3){
+  transform: translateY(-9px) rotate(90deg);
+}
+
+
+.headerMenu__navItems {
+  //display: none;
+  position: fixed;
+} 
+
+.headerMenu__navItems a {
+  color: var(--white);
+} 

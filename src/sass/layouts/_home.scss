@@ -2,10 +2,8 @@
 
 
 #heroHome {
-    background-image: url('/assets/images/summer-vacation-2457888.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
+    background-image: url('/assets/images/front2.jpg');
+    @include background-img;
 
     color: var(--light);
     min-height: 80vh;
@@ -15,39 +13,3 @@
 }
 
 
-.grid-boxes {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 3rem;
-}
-
- .grid-boxes-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-     gap: 2rem;
-     margin-top: 0.5rem;
-     margin-bottom: 3rem;
-
- }
-
- .grid-boxes figure {
-    height: 300px;
-    position: relative;
-   
-}
-
-.grid-boxes img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--radius);
-
-}
-
-.grid-boxes figcaption {
-    position: absolute;
-    left: 2rem;
-    bottom: 2rem;
-}

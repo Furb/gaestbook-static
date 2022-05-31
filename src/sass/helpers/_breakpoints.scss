@@ -1,12 +1,12 @@
-$breakpoints: (
-  xt: 0,
-  sm: 36rem,
-  md: 48rem,
-  lg: 62rem,
-  xl: 75rem,
-  xxl: 87.5rem
-);
 
+
+$breakpoints: (
+
+  "sm": 36rem,
+  "md": 48rem,
+  "lg": 62rem,
+
+);
 
 // _mixins.scss
 @mixin breakpoint($break) {
@@ -14,5 +14,3 @@ $breakpoints: (
         @content;
       }
 }
-
-
