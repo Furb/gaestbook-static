@@ -4,7 +4,7 @@
 #heroHome {
     background-image: url('/assets/images/front2.jpg');
     @include background-img;
-
+    background-color: var(--dark);
     color: var(--light);
     min-height: 80vh;
     display: flex;
